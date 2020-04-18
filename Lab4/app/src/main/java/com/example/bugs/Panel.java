@@ -42,7 +42,6 @@ class Panel extends View//основной класс отрисовки
         super(context);
 
         setThreads(true);
-        setMiss(true);
         setGame(true);
         setDeathPicture(BitmapFactory.decodeResource(getResources(), R.drawable.p0));
         setStartPoints();
@@ -240,7 +239,7 @@ class Panel extends View//основной класс отрисовки
 
     private void setMusic(Context context)//инициализация музыки
     {
-        sounds = new SoundPool(20, AudioManager.STREAM_MUSIC,0);
+        sounds = new SoundPool(10, AudioManager.STREAM_MUSIC,0);
         phon = MediaPlayer.create(context, R.raw.phon);
         phon.start();
 

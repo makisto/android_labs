@@ -149,7 +149,7 @@ public class BugThread extends Thread//вспомогательный класс
                     }
                 }
                 setSide(1);
-                setX_start(x_max - bug.getX_picture());
+                setX_start(getX_max() - bug.getX_picture());
             }
             if(getY_max() <= bug.getY())//если жук не был убит в течении своего пути
             {
